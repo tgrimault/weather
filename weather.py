@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 import json
+import datetime
 from urllib2 import urlopen
 
 class WForecast:
@@ -24,6 +25,7 @@ class WForecast:
 		return self
 
 
+now = datetime.datetime.now()
 
 forecast = WForecast()
 separator = "*************************************"
@@ -35,3 +37,4 @@ for i in range(0, forecast.nbOfForecast):
 	print forecast.weather[i]
 	print separator
 
+print now.strftime("%Y-%m-%d %H:%M")
