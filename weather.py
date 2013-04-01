@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 import json
 from urllib2 import urlopen
 from pprint import pprint
